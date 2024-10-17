@@ -1,5 +1,5 @@
 import Image from "next/image.js";
-import house1 from "../assets/images/house1.jpg";
+import home1 from "../assets/images/home1.jpg";
 
 
 export default function Home() {
@@ -22,10 +22,13 @@ export default function Home() {
 
   <div className=" "> 
   <img 
-      src={house1} 
-      alt="Building" 
-      class="w-full h-full object-cover"
-    />
+      src={home1} 
+      width={215}
+            height={30}
+            alt="building image"
+          />
+     
+     
   </div>
     </div>
   );
