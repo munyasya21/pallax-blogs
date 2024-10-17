@@ -1,10 +1,11 @@
-
+import Image from "next/image.js";
+import house1 from "../assets/images/house1.jpg";
 
 
 export default function Home() {
   return (
-    <div className="" >
-      <div className="pt-48 pl-48">
+    <div className="flex flex-col-reverse md:flex-row items-center bg-gray-50 h-screen" >
+      <div className="pt-38 pl-48">
       <h1 className="font-sans text-6xl font-bold">Blogs</h1>
       <p className="pt-10">Welcome to our website, your go-to destination for finding the perfect apartment!<br/>
        Whether you're looking for a cozy studio, a spacious family flat, or a luxury penthouse,<br/>
@@ -18,6 +19,14 @@ export default function Home() {
        </button>
        </div> 
     </div>
+
+  <div className=" "> 
+  <img 
+      src={house1} 
+      alt="Building" 
+      class="w-full h-full object-cover"
+    />
+  </div>
     </div>
   );
 }
